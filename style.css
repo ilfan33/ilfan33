@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 16px/28px 'Montserrat' , sans-serif;
+    background-image: url(https://www.toptal.com/designers/subtlepatterns/uploads/doodles.png);
+    color: #333;
+}
+
+
+.container {
+    width: 960px;
+    margin: 60px auto;
+    background-color: #fff;
+    position: relative;
+}
+
+.yt {
+    width: 100px;
+    height: 104px;
+    background-image: url(yt.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -999999px;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    z-index: 999;
+}
+.header {
+    padding: 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+}
+
+.header h3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: -50px;
+    padding: 5px;
+    color: salmon;
+    font-family: 'Pacifico';
+    letter-spacing: 3px;
+    font-size: x-large;
+}
+
+.header .judul {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.header ul {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    font-size: small;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.header a {
+    text-decoration: none;
+    color: salmon;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.header a:hover {
+    background-color: lightskyblue;
+    color: #000;
+}
+
+/*  dropdown start */
+.header li.submenu ul.dropdown {
+    display: none;
+    position: absolute;
+    width: 200px;
+}
+
+.header li.submenu:hover ul.dropdown {
+    display: block;
+}
+
+.header li.submenu ul.dropdown li {
+    display: block;
+    background-color: #fff;
+    margin-top: 0px;
+    padding: 7px;
+    width: 150px;
+}
+
+.header li.submenu ul.dropdown li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* dropdown end */
+
+
+
+.hero {
+    height: 320px;
+    background-image: url(logo.png);
+    background-size: cover;
+    background-position: 0 -110px;
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid lightskyblue;
+}
+
+.hero a {
+    height: 100%;
+    position: absolute;
+}
+
+/* main css */
+
+.main {
+    padding: 20px;
+    width: 600px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Pacifico';
+}
+
+.main .penulis {
+    font-size: small;
+    margin-top: 5px;
+}
+
+.main a {
+    text-decoration: none;
+}
+.main .penulis a:hover {
+    color: salmon;
+    background-color: lightskyblue;
+}
+
+.main p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* sidebar css */
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.sidebar h3  {
+    font-weight: bold;
+    color: salmon;
+    padding-bottom: 10px;
+}
+
+.sidebar img {
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding-right: 10px;
+}
+
+.sidebar p {
+    font: 12px/18px arial ;
+}
+
+
+
+
+/* footer css */
+.footer {
+    background-color: #333;
+    padding: 20px;
+}
+
+.footer .copy {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ini adalah clear fix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
